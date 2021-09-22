@@ -1,10 +1,11 @@
-# from unittest.mock import Mock
+from unittest.mock import Mock
 
-#mock = Mock()
+mock = Mock()
 
-import main as m
 import json
 
-teste = m.div()
+teste = json.dumps({'a': 1})
+json = mock
 
-print(dir(teste))
+#Como pode ser visto no print abaixo a dependência json não possui a função "dumps", porém ainda assim foi possível "disfarçar"
+print(dir(json))
