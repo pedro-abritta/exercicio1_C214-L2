@@ -5,7 +5,7 @@ mock = Mock()
 import json
 
 teste = json.dumps({'a': 1})
-json = mock
+d = mock
 
 #Como pode ser visto no print abaixo a dependência json não possui a função "dumps", porém ainda assim foi possível "disfarçar"
-print(dir(json))
+print(dir(d))
